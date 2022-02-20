@@ -49,7 +49,7 @@ class Settings:
     # Snake settings
     snake_color = Constants.blue
     snake_init_length = 4
-    snake_move_feq = 10
+    snake_move_feq = 60
 
     # Food settings
     food_nums = 1

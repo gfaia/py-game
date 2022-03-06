@@ -8,7 +8,6 @@ import os
 class Player(pg.sprite.Sprite):
     """Player object"""
 
-
     def __init__(self, game):
 
         pg.sprite.Sprite.__init__(self)
@@ -25,7 +24,7 @@ class Player(pg.sprite.Sprite):
         self.speed_x = 0
         self.speed_y = 0
 
-        self.radius = int(self.rect.width * .85 / 2)
+        self.radius = int(self.rect.width * 0.85 / 2)
 
         # Shields: init to 100
         self.shields = 100

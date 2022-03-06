@@ -13,7 +13,7 @@ class Constants:
     blue = 0, 0, 200
     yellow = 255, 255, 0
     green = 0, 255, 0
-    lightgrey= 100, 100, 100
+    lightgrey = 100, 100, 100
 
     # Directions
     up = 0
@@ -25,9 +25,9 @@ class Constants:
 class Settings:
 
     # The basic information
-    author = 'Gfaia'
-    version = 'Snaker v1.3'
-    date = '2018.8.19'
+    author = "Gfaia"
+    version = "Snaker v1.3"
+    date = "2018.8.19"
 
     # Common settings for game.
     width, height = 400, 400
@@ -63,7 +63,6 @@ def random_locate():
 
 
 class SnakeBodyPart(object):
-
     def __init__(self, screen, pos, dir, color):
         self.screen = screen
         self.dir = dir
@@ -113,7 +112,6 @@ class SnakeBodyPart(object):
 
 
 class Snake(object):
-
     def __init__(self, screen, color, init_length):
         self.screen = screen
         self.color = color
@@ -190,7 +188,6 @@ class Snake(object):
 
 
 class Food(object):
-
     def __init__(self, screen, color):
         self.screen = screen
         self.width, self.height = Settings.grid_size, Settings.grid_size
@@ -209,7 +206,6 @@ class Food(object):
 
 
 class Game(object):
-
     def __init__(self):
         """initialize game window, etc."""
         pg.init()
@@ -252,7 +248,7 @@ class Game(object):
                 if event.key == pg.K_ESCAPE:
                     self.running = False
                 if event.key == pg.K_o:
-                    self.debug = ~ self.debug
+                    self.debug = ~self.debug
         # Snake's events.
         self.snake.events()
 

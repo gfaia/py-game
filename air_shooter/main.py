@@ -6,9 +6,9 @@ from sprites import Player, Mob
 
 class Game:
 
-    version = 'air-shooter v1.2'
-    author = 'Gfaia'
-    date = '2018.2.24'
+    version = "air-shooter v1.2"
+    author = "Gfaia"
+    date = "2018.2.24"
 
     def __init__(self):
         """initialize game window, etc."""
@@ -64,7 +64,6 @@ class Game:
         self.exp_dir = os.path.join(self.images_dir, "Explosion_meteor")
         self.exp_list = os.listdir(self.exp_dir)
 
-
     def create_mob(self):
         """Create the mob"""
         m = Mob(self)
@@ -107,7 +106,7 @@ class Game:
                 if event.key == pg.K_ESCAPE:
                     self.running = False
                 if event.key == pg.K_o:
-                    self.debug = ~ self.debug
+                    self.debug = ~self.debug
 
     def draw(self):
         """Main draw function."""

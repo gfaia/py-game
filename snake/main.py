@@ -23,11 +23,8 @@ class Constants:
 
 
 class Settings:
-
     # The basic information
-    author = "Gfaia"
-    version = "Snaker v1.3"
-    date = "2018.8.19"
+    version = "v1.0"
 
     # Common settings for game.
     width, height = 400, 400
@@ -49,7 +46,7 @@ class Settings:
     # Snake settings
     snake_color = Constants.blue
     snake_init_length = 4
-    snake_move_feq = 60
+    snake_move_feq = 30
 
     # Food settings
     food_nums = 1
@@ -231,9 +228,8 @@ class Game(object):
         """Game loop."""
         self.count = 0
         self.score = 0
-        self.clock.tick(self.fps)
         while self.running:
-            # self.clock.tick(self.fps)
+            self.clock.tick(self.fps)
             self.events()
             self.update()
             self.draw()

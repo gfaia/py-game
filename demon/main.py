@@ -2,6 +2,7 @@ import pygame
 
 
 class Sprite(pygame.sprite.Sprite):
+
     def __init__(self, target):
         pygame.sprite.Sprite.__init__(self)
         self.target_surface = target
@@ -78,4 +79,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    g = Game()
+    g.run()
+

@@ -7,7 +7,7 @@ import os
 WIDTH, HEIGHT = 480, 600
 
 # fps
-FPS = 60
+# FPS = 120
 
 # Color
 WHITE = (255, 255, 255)
@@ -24,4 +24,4 @@ ZERO = 0
 GAME_DIR = os.path.dirname(__file__)
 
 # Game Gravity
-GRAVITY = 0.5
+GRAVITY = 0.1

@@ -22,9 +22,7 @@ class Constants:
 class Settings:
 
     # The basic information
-    author = "Gfaia"
-    version = "Jumper v1.4"
-    date = "2018.8.21"
+    version = "v1.0-alpha"
 
     # Common settings for game.
     width, height = 400, 600
@@ -58,21 +56,19 @@ class Game(object):
 
         self.font = pg.font.match_font(Settings.font_face, Settings.font_size)
 
-        self.new()
-
-    def new(self):
         self.all_sprites = pg.sprite.Group()
         self.player = Player(self)
         self.all_sprites.add(self.player)
 
+        # TODO: create random platform.
         self.platforms = pg.sprite.Group()
         self.platform = Platform(100, 500, 300, 20)
         self.platforms.add(self.platform)
 
     def run(self):
         """Game loop."""
-        self.clock.tick(self.fps)
         while self.running:
+            self.clock.tick(self.fps)
             self.events()
             self.update()
             self.draw()

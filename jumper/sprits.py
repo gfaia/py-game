@@ -36,7 +36,7 @@ class Player(pg.sprite.Sprite):
         # Only jumper when player is standing on the platform.
         if self.standing == True:
             if key_state[pg.K_SPACE]:
-                self.vel.y = -15
+                self.vel.y = -5
 
         # Detect collusion.
         hits = pg.sprite.spritecollide(self, self.game.platforms, False)

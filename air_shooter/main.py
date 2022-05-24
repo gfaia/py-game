@@ -6,9 +6,7 @@ from sprites import Player, Mob
 
 class Game:
 
-    version = "air-shooter v1.2"
-    author = "Gfaia"
-    date = "2018.2.24"
+    version = "v1.0-alpha"
 
     def __init__(self):
         """initialize game window, etc."""

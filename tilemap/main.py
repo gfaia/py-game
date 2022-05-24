@@ -7,9 +7,7 @@ from map import Camera, TiledMap
 
 class Game:
 
-    version = 'Tilemap v1.4.1'
-    author = 'Gfaia'
-    date = '2018.4.12'
+    version = "v1.0-alpha"
 
     def __init__(self):
         """initialize game window, etc."""

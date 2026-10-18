@@ -1,0 +1,36 @@
+[timing]
+day_duration = 5
+night_duration = 50
+result_duration = 4
+
+[player]
+max_health = 100
+speed = 300
+jump_speed = 650
+fire_cooldown = 0.22
+melee_damage = 1
+melee_cooldown = 0.35
+melee_range = 68
+initial_weapon = "gun"
+initial_ammo = 999
+initial_food = 0
+initial_boards = 0
+
+[zombies]
+speed = 78
+max_health = 3
+damage = 8
+attack_cooldown = 1.0
+hit_effect_duration = 0.18
+death_animation_duration = 0.72
+max_count = 14
+spawn_interval = 1.8
+
+[weapons]
+bullet_speed = 760
+bullet_damage = 1
+bullet_max_distance = 900
+
+[gate]
+max_health = 150
+damage = 6

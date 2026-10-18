@@ -36,6 +36,19 @@ Press `N` to begin the night early.
 Click to shoot zombies during the night.
 Press `R` to restart or `Esc` to quit.
 
+## Safehouse: Night Watch demo
+
+Run the demo from the repository root.
+
+```sh
+python3 side_scroller_survival/main.py
+```
+
+Use `A` and `D` to move. Use `Space` to jump.
+Press `E` near a supply crate to search it.
+Aim with the mouse and click to shoot.
+Press `R` to restart or `Esc` to quit.
+
 ## Linter
 
 ```sh

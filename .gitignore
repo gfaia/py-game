@@ -133,3 +133,6 @@ dmypy.json
 .vscode
 
 ._*
+
+# Local game artwork is distributed outside the repository.
+/side_scroller_survival/assets/
